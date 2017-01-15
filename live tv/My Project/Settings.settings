@@ -5,5 +5,41 @@
     <Setting Name="firstrun" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="stv1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="stv2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ta3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://88.212.15.9:5000/live/ta3_1200/playlist_key_url.m3u8</Value>
+    </Setting>
+    <Setting Name="lux" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8</Value>
+    </Setting>
+    <Setting Name="joj" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://88.212.15.9:5000/live/joj_1200/playlist_key_url.m3u8</Value>
+    </Setting>
+    <Setting Name="markiza" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://213.81.153.243/live003/channel003_p5.stream/DVR.m3u8</Value>
+    </Setting>
+    <Setting Name="elektrikatv" Type="System.String" Scope="User">
+      <Value Profile="(Default)">rtmp://rtmp.elektrika.cz/live/myStream.sdp</Value>
+    </Setting>
+    <Setting Name="ct1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ct2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="retro" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8</Value>
+    </Setting>
+    <Setting Name="cetv" Type="System.String" Scope="User">
+      <Value Profile="(Default)">rtmp://62.197.236.3/livepkgr/cetv</Value>
+    </Setting>
+    <Setting Name="slagr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://88.212.15.9:5000/live/slagr/playlist_key_url.m3u8</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

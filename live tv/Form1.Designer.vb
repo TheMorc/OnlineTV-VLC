@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim WebPreferences4 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
+        Dim WebPreferences5 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
         Me.AxVLCPlugin21 = New AxAXVLC.AxVLCPlugin2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
@@ -217,15 +217,15 @@ Partial Class Form1
         '
         'WebSessionProvider1
         '
-        WebPreferences4.Databases = True
-        WebPreferences4.EnableGPUAcceleration = True
-        WebPreferences4.JavascriptViewChangeSource = False
-        WebPreferences4.JavascriptViewEvents = False
-        WebPreferences4.JavascriptViewExecute = False
-        WebPreferences4.SmoothScrolling = True
-        WebPreferences4.UniversalAccessFromFileURL = True
-        WebPreferences4.WebGL = True
-        Me.WebSessionProvider1.Preferences = WebPreferences4
+        WebPreferences5.Databases = True
+        WebPreferences5.EnableGPUAcceleration = True
+        WebPreferences5.JavascriptViewChangeSource = False
+        WebPreferences5.JavascriptViewEvents = False
+        WebPreferences5.JavascriptViewExecute = False
+        WebPreferences5.SmoothScrolling = True
+        WebPreferences5.UniversalAccessFromFileURL = True
+        WebPreferences5.WebGL = True
+        Me.WebSessionProvider1.Preferences = WebPreferences5
         Me.WebSessionProvider1.Views.Add(Me.awebrow)
         '
         'awebrow
@@ -293,7 +293,7 @@ Partial Class Form1
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(285, 60)
         Me.Button11.TabIndex = 10
-        Me.Button11.Text = "11 RELAX"
+        Me.Button11.Text = "11 RETRO"
         Me.Button11.UseVisualStyleBackColor = False
         '
         'Button10

@@ -39,47 +39,46 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Form1.prehraj("1", "JEDNOTKA", "http://www.spusti.net/live/?id=101_7114487525752.m3u8")
+        Form1.prehraj("1", "JEDNOTKA", My.Settings.stv1)
     End Sub
-
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Form1.prehraj("2", "DVOJKA", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+        Form1.prehraj("2", "DVOJKA", My.Settings.stv2)
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        Form1.prehraj("3", "CETV", "rtmp://62.197.236.3/livepkgr/cetv")
+        Form1.prehraj("3", "CETV", My.Settings.cetv)
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Form1.prehraj("4", "TA3", "http://88.212.15.9:5000/live/ta3_1200/playlist_key_url.m3u8")
+        Form1.prehraj("4", "TA3", My.Settings.ta3)
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
-        Form1.prehraj("5", "MARKIZA", "http://213.81.153.243/live003/channel003_p5.stream/DVR.m3u8")
+        Form1.prehraj("5", "MARKIZA", My.Settings.markiza)
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
-        Form1.prehraj("6", "TV JOJ", "http://88.212.15.9:5000/live/joj_1200/playlist_key_url.m3u8")
+        Form1.prehraj("6", "TV JOJ", My.Settings.joj)
     End Sub
 
     Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
-        Form1.prehraj("7", "TV LUX", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+        Form1.prehraj("7", "TV LUX", My.Settings.lux)
     End Sub
 
     Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
-        Form1.prehraj("8", "SLAGR TV", "http://88.212.15.9:5000/live/slagr/playlist_key_url.m3u8")
+        Form1.prehraj("8", "SLAGR TV", My.Settings.slagr)
     End Sub
 
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
-        Form1.prehraj("9", "CT1", "http://www.spusti.net/live/?id=3_211321411656.m3u8")
+        Form1.prehraj("9", "CT1", My.Settings.ct1)
     End Sub
 
     Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Form1.prehraj("10", "CT2", "http://www.spusti.net/live/?id=4_281761882208.m3u8")
+        Form1.prehraj("10", "CT2", My.Settings.ct2)
     End Sub
 
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Form1.prehraj("11", "RETRO", "http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8")
+        Form1.prehraj("11", "RETRO", My.Settings.retro)
     End Sub
 
     Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
@@ -128,29 +127,29 @@
         Else
 
             If Form1.channel = 1 Then
-                Form1.prehraj("1", "JEDNOTKA", "http://www.spusti.net/live/?id=101_7114487525752.m3u8")
+                Form1.prehraj("1", "JEDNOTKA", My.Settings.stv1)
             ElseIf Form1.channel = 2 Then
-                Form1.prehraj("2", "DVOJKA", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+                Form1.prehraj("2", "DVOJKA", My.Settings.stv2)
             ElseIf Form1.channel = 3 Then
                 Form1.prehraj("3", "CETV", "rtmp://62.197.236.3/livepkgr/cetv")
             ElseIf Form1.channel = 4 Then
-                Form1.prehraj("4", "TA3", "http://88.212.15.9:5000/live/ta3_1200/playlist_key_url.m3u8")
+                Form1.prehraj("4", "TA3", My.Settings.ta3)
             ElseIf Form1.channel = 5 Then
-                Form1.prehraj("5", "MARKIZA", "http://213.81.153.243/live003/channel003_p5.stream/DVR.m3u8")
+                Form1.prehraj("5", "MARKIZA", My.Settings.markiza)
             ElseIf Form1.channel = 6 Then
-                Form1.prehraj("6", "TV JOJ", "http://88.212.15.9:5000/live/joj_1200/playlist_key_url.m3u8")
+                Form1.prehraj("6", "TV JOJ", My.Settings.joj)
             ElseIf Form1.channel = 7 Then
-                Form1.prehraj("7", "TV LUX", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+                Form1.prehraj("7", "TV LUX", My.Settings.lux)
             ElseIf Form1.channel = 8 Then
-                Form1.prehraj("8", "SLAGR TV", "http://88.212.15.9:5000/live/slagr/playlist_key_url.m3u8")
+                Form1.prehraj("8", "SLAGR TV", My.Settings.slagr)
             ElseIf Form1.channel = 9 Then
-                Form1.prehraj("9", "CT1", "http://www.spusti.net/live/?id=3_211321411656.m3u8")
+                Form1.prehraj("9", "CT1", My.Settings.ct1)
             ElseIf Form1.channel = 10 Then
-                Form1.prehraj("10", "CT2", "http://www.spusti.net/live/?id=4_281761882208.m3u8")
+                Form1.prehraj("10", "CT2", My.Settings.ct2)
             ElseIf Form1.channel = 11 Then
-                Form1.prehraj("11", "RETRO", "http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8")
+                Form1.prehraj("11", "RETRO", My.Settings.retro)
             ElseIf Form1.channel = 12 Then
-                Form1.prehraj("12", "ELEKTRIKA.TV", "rtmp://rtmp.elektrika.cz/live/myStream.sdp")
+                Form1.prehraj("12", "ELEKTRIKA.TV", My.Settings.elektrikatv)
             End If
             Form1.channel = Form1.channel + 1
         End If
@@ -161,29 +160,29 @@
 
         Else
             If Form1.channel = 1 Then
-                Form1.prehraj("1", "JEDNOTKA", "http://www.spusti.net/live/?id=101_7114487525752.m3u8")
+                Form1.prehraj("1", "JEDNOTKA", My.Settings.stv1)
             ElseIf Form1.channel = 2 Then
-                Form1.prehraj("2", "DVOJKA", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+                Form1.prehraj("2", "DVOJKA", My.Settings.stv2)
             ElseIf Form1.channel = 3 Then
-                Form1.prehraj("3", "CETV", "rtmp://62.197.236.3/livepkgr/cetv")
+                Form1.prehraj("3", "CETV", My.Settings.cetv)
             ElseIf Form1.channel = 4 Then
-                Form1.prehraj("4", "TA3", "http://88.212.15.9:5000/live/ta3_1200/playlist_key_url.m3u8")
+                Form1.prehraj("4", "TA3", My.Settings.ta3)
             ElseIf Form1.channel = 5 Then
-                Form1.prehraj("5", "MARKIZA", "http://213.81.153.243/live003/channel003_p5.stream/DVR.m3u8")
+                Form1.prehraj("5", "MARKIZA", My.Settings.markiza)
             ElseIf Form1.channel = 6 Then
-                Form1.prehraj("6", "TV JOJ", "http://88.212.15.9:5000/live/joj_1200/playlist_key_url.m3u8")
+                Form1.prehraj("6", "TV JOJ", My.Settings.joj)
             ElseIf Form1.channel = 7 Then
-                Form1.prehraj("7", "TV LUX", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+                Form1.prehraj("7", "TV LUX", My.Settings.lux)
             ElseIf Form1.channel = 8 Then
-                Form1.prehraj("8", "SLAGR TV", "http://88.212.15.9:5000/live/slagr/playlist_key_url.m3u8")
+                Form1.prehraj("8", "SLAGR TV", My.Settings.slagr)
             ElseIf Form1.channel = 9 Then
-                Form1.prehraj("9", "CT1", "http://www.spusti.net/live/?id=3_211321411656.m3u8")
+                Form1.prehraj("9", "CT1", My.Settings.ct1)
             ElseIf Form1.channel = 10 Then
-                Form1.prehraj("10", "CT2", "http://www.spusti.net/live/?id=4_281761882208.m3u8")
+                Form1.prehraj("10", "CT2", My.Settings.ct2)
             ElseIf Form1.channel = 11 Then
-                Form1.prehraj("11", "RETRO", "http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8")
+                Form1.prehraj("11", "RETRO", My.Settings.retro)
             ElseIf Form1.channel = 12 Then
-                Form1.prehraj("12", "ELEKTRIKA.TV", "rtmp://rtmp.elektrika.cz/live/myStream.sdp")
+                Form1.prehraj("12", "ELEKTRIKA.TV", My.Settings.elektrikatv)
             End If
             Form1.channel = Form1.channel - 1
         End If
@@ -350,40 +349,40 @@
     Private Sub Button28_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button28.Click
         If Form1.Panel4.Visible = True Then
             If Form1.Button1.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("1", "JEDNOTKA", "http://www.spusti.net/live/?id=101_7114487525752.m3u8")
+                Form1.prehraj("1", "JEDNOTKA", My.Settings.stv1)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button2.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("2", "DVOJKA", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+                Form1.prehraj("2", "DVOJKA", My.Settings.stv2)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button3.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("3", "CETV", "rtmp://62.197.236.3/livepkgr/cetv")
+                Form1.prehraj("3", "CETV", My.Settings.cetv)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button4.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("4", "TA3", "http://88.212.15.9:5000/live/ta3_1200/playlist_key_url.m3u8")
+                Form1.prehraj("4", "TA3", My.Settings.ta3)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button5.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("5", "MARKIZA", "http://213.81.153.243/live003/channel003_p5.stream/DVR.m3u8")
+                Form1.prehraj("5", "MARKIZA", My.Settings.markiza)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button6.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("6", "TV JOJ", "http://88.212.15.9:5000/live/joj_1200/playlist_key_url.m3u8")
+                Form1.prehraj("6", "TV JOJ", My.Settings.joj)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button7.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("7", "TV LUX", "http://live.tvlux.sk:1935/lux/lux.stream_360p/playlist.m3u8")
+                Form1.prehraj("7", "TV LUX", My.Settings.lux)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button8.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("8", "SLAGR TV", "http://88.212.15.9:5000/live/slagr/playlist_key_url.m3u8")
+                Form1.prehraj("8", "SLAGR TV", My.Settings.slagr)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button9.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("9", "CT1", "http://www.spusti.net/live/?id=3_211321411656.m3u8")
+                Form1.prehraj("9", "CT1", My.Settings.ct1)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button10.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("10", "CT2", "http://www.spusti.net/live/?id=4_281761882208.m3u8")
+                Form1.prehraj("10", "CT2", My.Settings.ct2)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button11.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("11", "RETRO", "http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8")
+                Form1.prehraj("11", "RETRO", my.settings.retro)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button12.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("12", "ELEKTRIKA.TV", "rtmp://rtmp.elektrika.cz/live/myStream.sdp")
+                Form1.prehraj("12", "ELEKTRIKA.TV", My.Settings.elektrikatv)
                 Form1.Panel4.Visible = False
 
 
