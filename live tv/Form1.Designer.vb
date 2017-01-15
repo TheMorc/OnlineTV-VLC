@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim WebPreferences6 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
+        Dim WebPreferences2 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
         Me.AxVLCPlugin21 = New AxAXVLC.AxVLCPlugin2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
@@ -61,10 +61,10 @@ Partial Class Form1
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button13 = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.AxVLCPlugin21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,7 +86,7 @@ Partial Class Form1
         Me.AxVLCPlugin21.Location = New System.Drawing.Point(36, 21)
         Me.AxVLCPlugin21.Name = "AxVLCPlugin21"
         Me.AxVLCPlugin21.OcxState = CType(resources.GetObject("AxVLCPlugin21.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1191, 685)
+        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1192, 685)
         Me.AxVLCPlugin21.TabIndex = 0
         '
         'Timer1
@@ -126,7 +126,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.livetv_morc.My.Resources.Resources.satellite_dish
+        Me.PictureBox1.Image = Global.livetv_morc.My.Resources.Resources.channelicon1
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(63, 50)
@@ -187,15 +187,15 @@ Partial Class Form1
         '
         'WebSessionProvider1
         '
-        WebPreferences6.Databases = True
-        WebPreferences6.EnableGPUAcceleration = True
-        WebPreferences6.JavascriptViewChangeSource = False
-        WebPreferences6.JavascriptViewEvents = False
-        WebPreferences6.JavascriptViewExecute = False
-        WebPreferences6.SmoothScrolling = True
-        WebPreferences6.UniversalAccessFromFileURL = True
-        WebPreferences6.WebGL = True
-        Me.WebSessionProvider1.Preferences = WebPreferences6
+        WebPreferences2.Databases = True
+        WebPreferences2.EnableGPUAcceleration = True
+        WebPreferences2.JavascriptViewChangeSource = False
+        WebPreferences2.JavascriptViewEvents = False
+        WebPreferences2.JavascriptViewExecute = False
+        WebPreferences2.SmoothScrolling = True
+        WebPreferences2.UniversalAccessFromFileURL = True
+        WebPreferences2.WebGL = True
+        Me.WebSessionProvider1.Preferences = WebPreferences2
         Me.WebSessionProvider1.Views.Add(Me.awebrow)
         '
         'awebrow
@@ -420,7 +420,7 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = Global.livetv_morc.My.Resources.Resources.unnamed
+        Me.PictureBox3.Image = Global.livetv_morc.My.Resources.Resources.mute
         Me.PictureBox3.Location = New System.Drawing.Point(237, -3)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(61, 52)
@@ -464,7 +464,7 @@ Partial Class Form1
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = Global.livetv_morc.My.Resources.Resources.sdsddssds
+        Me.PictureBox4.Image = Global.livetv_morc.My.Resources.Resources.light
         Me.PictureBox4.Location = New System.Drawing.Point(580, 706)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 74)
@@ -474,15 +474,39 @@ Partial Class Form1
         '
         'Panel9
         '
+        Me.Panel9.BackgroundImage = Global.livetv_morc.My.Resources.Resources.panel
+        Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel9.Controls.Add(Me.Label7)
         Me.Panel9.Controls.Add(Me.Label6)
         Me.Panel9.Controls.Add(Me.Label5)
         Me.Panel9.Controls.Add(Me.Button13)
-        Me.Panel9.Location = New System.Drawing.Point(36, 21)
+        Me.Panel9.Location = New System.Drawing.Point(93, 44)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(1192, 685)
+        Me.Panel9.Size = New System.Drawing.Size(1079, 537)
         Me.Panel9.TabIndex = 1
         Me.Panel9.Visible = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(22, 155)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(600, 84)
+        Me.Label7.TabIndex = 5
+        Me.Label7.Text = "this app uses public ip addresses " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "with live tv from slovakia and czech"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(14, 622)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(245, 42)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "by Morc 2017"
         '
         'Label5
         '
@@ -505,45 +529,23 @@ Partial Class Form1
         Me.Button13.Text = "reset settings"
         Me.Button13.UseVisualStyleBackColor = True
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(14, 622)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(245, 42)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "by Morc 2017"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(22, 155)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(600, 84)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "this app uses public ip addresses " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "with live tv from slovakia and czech"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.livetv_morc.My.Resources.Resources.maxresdefault
+        Me.BackgroundImage = Global.livetv_morc.My.Resources.Resources.tv
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1264, 825)
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.AxVLCPlugin21)
+        Me.Controls.Add(Me.PictureBox2)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

@@ -208,7 +208,7 @@
     <None Include="Resources\panel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\satellite-dish.png" />
+    <Content Include="Resources\channelicon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\smg.png" />
@@ -217,13 +217,10 @@
     <None Include="Resources\CrackedScreen1440x900_001.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sdsddssds.png" />
+    <None Include="Resources\light.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="maxresdefault_1YCRYJ_256px.ico" />
-    <None Include="Resources\aspect.PNG" />
-    <None Include="Resources\volume.PNG" />
-    <None Include="Resources\channel.PNG" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
