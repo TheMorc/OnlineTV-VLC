@@ -41,5 +41,8 @@
     <Setting Name="slagr" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://88.212.15.9:5000/live/slagr/playlist_key_url.m3u8</Value>
     </Setting>
+    <Setting Name="lang" Type="System.String" Scope="User">
+      <Value Profile="(Default)">English</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

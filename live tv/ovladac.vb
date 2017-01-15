@@ -300,6 +300,16 @@
 
             End If
         End If
+
+        If Form1.Panel9.Visible = True Then
+            If Form1.Button13.BackColor = Color.DeepSkyBlue Then
+                Form1.Button13.BackColor = Color.White
+                Form1.Button14.BackColor = Color.DeepSkyBlue
+            ElseIf Form1.Button14.BackColor = Color.DeepSkyBlue Then
+                Form1.Button14.BackColor = Color.White
+                Form1.Button13.BackColor = Color.DeepSkyBlue
+            End If
+        End If
     End Sub
 
     Private Sub Button25_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button25.Click
@@ -342,6 +352,15 @@
                 Form1.Button12.BackColor = Color.White
                 Form1.Button1.BackColor = Color.DeepSkyBlue
 
+            End If
+        End If
+        If Form1.Panel9.Visible = True Then
+            If Form1.Button13.BackColor = Color.DeepSkyBlue Then
+                Form1.Button13.BackColor = Color.White
+                Form1.Button14.BackColor = Color.DeepSkyBlue
+            ElseIf Form1.Button14.BackColor = Color.DeepSkyBlue Then
+                Form1.Button14.BackColor = Color.White
+                Form1.Button13.BackColor = Color.DeepSkyBlue
             End If
         End If
     End Sub
@@ -390,6 +409,13 @@
         Else
             Form1.Panel4.Visible = True
         End If
+
+        If Form1.Panel9.Visible = True Then
+            If Form1.Button13.BackColor = Color.DeepSkyBlue Then
+                My.Settings.firstrun = True
+                My.Settings.Save()
+            End If
+        End If
     End Sub
 
     Private Sub Button11_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
@@ -411,7 +437,6 @@
         Button9.Enabled = turned
         Button10.Enabled = turned
         Button11.Enabled = turned
-        Button13.Enabled = turned
         Button14.Enabled = turned
         Button15.Enabled = turned
         Button16.Enabled = turned
@@ -436,6 +461,12 @@
             textturned = False
         End If
         Label1.Visible = textturned
+        If Form1.Panel9.Visible = True Then
+            Form1.Panel9.Visible = False
+        End If
+        If Form1.Panel4.Visible = True Then
+            Form1.Panel4.Visible = False
+        End If
     End Sub
 
     Private Sub ovladac_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -464,5 +495,45 @@
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         Form1.Close()
         Close()
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        If Form1.Panel9.Visible = True Then
+            If Form1.Button14.BackColor = Color.DeepSkyBlue Then
+                If Form1.Button14.Text = "English" Then
+                    Form1.Button14.Text = "Slovak"
+                    My.Settings.lang = "Slovak"
+                ElseIf Form1.Button14.Text = "Slovak" Then
+                    Form1.Button14.Text = "Czech"
+                    My.Settings.lang = "Czech"
+                ElseIf Form1.Button14.Text = "Czech" Then
+                    Form1.Button14.Text = "English"
+                    My.Settings.lang = "English"
+                End If
+                Form1.Timer7.Start()
+            End If
+        End If
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        If Form1.Panel9.Visible = True Then
+            If Form1.Button14.BackColor = Color.DeepSkyBlue Then
+                If Form1.Button14.Text = "English" Then
+                    Form1.Button14.Text = "Czech"
+                    My.Settings.lang = "Czech"
+                ElseIf Form1.Button14.Text = "Czech" Then
+                    Form1.Button14.Text = "Slovak"
+                    My.Settings.lang = "Slovak"
+                ElseIf Form1.Button14.Text = "Slovak" Then
+                    Form1.Button14.Text = "English"
+                    My.Settings.lang = "English"
+                End If
+                Form1.Timer5.Start()
+            End If
+        End If
+    End Sub
+
+    Private Sub Button12_Click_1(sender As Object, e As EventArgs) Handles Button12.Click
+        Process.Start("https://github.com/TheMorc/OnlineTV-VLC")
     End Sub
 End Class

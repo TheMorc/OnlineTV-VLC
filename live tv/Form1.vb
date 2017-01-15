@@ -58,9 +58,25 @@
         Timer4.Stop()
     End Sub
 
-    Private Sub Button13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button13.Click
+    Private Sub Timer5_Tick(sender As Object, e As EventArgs) Handles Timer5.Tick
+        Label8.Font = New Font("Segoe UI", 27.75, FontStyle.Bold)
+        Timer6.Start()
+        Timer5.Stop()
+    End Sub
 
-        My.Settings.firstrun = True
-        My.Settings.Save()
+    Private Sub Timer6_Tick(sender As Object, e As EventArgs) Handles Timer6.Tick
+        Label8.Font = New Font("Segoe UI", 27.75, FontStyle.Regular)
+        Timer6.Stop()
+    End Sub
+
+    Private Sub Timer8_Tick(sender As Object, e As EventArgs) Handles Timer8.Tick
+        Label9.Font = New Font("Segoe UI", 27.75, FontStyle.Regular)
+        Timer8.Stop()
+    End Sub
+
+    Private Sub Timer7_Tick(sender As Object, e As EventArgs) Handles Timer7.Tick
+        Label9.Font = New Font("Segoe UI", 27.75, FontStyle.Bold)
+        Timer8.Start()
+        Timer7.Stop()
     End Sub
 End Class

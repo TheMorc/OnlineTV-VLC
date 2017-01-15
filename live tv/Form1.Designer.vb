@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim WebPreferences5 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
+        Dim WebPreferences1 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
         Me.AxVLCPlugin21 = New AxAXVLC.AxVLCPlugin2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
@@ -61,25 +61,19 @@ Partial Class Form1
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button14 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button13 = New System.Windows.Forms.Button()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.AxVLCPlugin21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,20 +88,6 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
         Me.Panel10.SuspendLayout()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'AxVLCPlugin21
@@ -116,7 +96,7 @@ Partial Class Form1
         Me.AxVLCPlugin21.Location = New System.Drawing.Point(36, 21)
         Me.AxVLCPlugin21.Name = "AxVLCPlugin21"
         Me.AxVLCPlugin21.OcxState = CType(resources.GetObject("AxVLCPlugin21.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1192, 685)
+        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1191, 685)
         Me.AxVLCPlugin21.TabIndex = 0
         '
         'Timer1
@@ -217,15 +197,15 @@ Partial Class Form1
         '
         'WebSessionProvider1
         '
-        WebPreferences5.Databases = True
-        WebPreferences5.EnableGPUAcceleration = True
-        WebPreferences5.JavascriptViewChangeSource = False
-        WebPreferences5.JavascriptViewEvents = False
-        WebPreferences5.JavascriptViewExecute = False
-        WebPreferences5.SmoothScrolling = True
-        WebPreferences5.UniversalAccessFromFileURL = True
-        WebPreferences5.WebGL = True
-        Me.WebSessionProvider1.Preferences = WebPreferences5
+        WebPreferences1.Databases = True
+        WebPreferences1.EnableGPUAcceleration = True
+        WebPreferences1.JavascriptViewChangeSource = False
+        WebPreferences1.JavascriptViewEvents = False
+        WebPreferences1.JavascriptViewExecute = False
+        WebPreferences1.SmoothScrolling = True
+        WebPreferences1.UniversalAccessFromFileURL = True
+        WebPreferences1.WebGL = True
+        Me.WebSessionProvider1.Preferences = WebPreferences1
         Me.WebSessionProvider1.Views.Add(Me.awebrow)
         '
         'awebrow
@@ -506,199 +486,104 @@ Partial Class Form1
         '
         Me.Panel9.BackgroundImage = Global.livetv_morc.My.Resources.Resources.panel
         Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel9.Controls.Add(Me.Panel10)
+        Me.Panel9.Controls.Add(Me.Label10)
+        Me.Panel9.Controls.Add(Me.Label9)
+        Me.Panel9.Controls.Add(Me.Label8)
+        Me.Panel9.Controls.Add(Me.Button14)
         Me.Panel9.Controls.Add(Me.Label7)
-        Me.Panel9.Controls.Add(Me.Label5)
         Me.Panel9.Controls.Add(Me.Button13)
+        Me.Panel9.Controls.Add(Me.Panel10)
+        Me.Panel9.Controls.Add(Me.Label5)
         Me.Panel9.Location = New System.Drawing.Point(93, 44)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(1079, 537)
         Me.Panel9.TabIndex = 1
         Me.Panel9.Visible = False
         '
+        'Label10
+        '
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semilight", 27.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(0, 139)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(205, 51)
+        Me.Label10.TabIndex = 13
+        Me.Label10.Text = "Language:"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label9
+        '
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(524, 135)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(36, 60)
+        Me.Label9.TabIndex = 12
+        Me.Label9.Text = ">"
+        Me.Label9.UseCompatibleTextRendering = True
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(202, 135)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(36, 60)
+        Me.Label8.TabIndex = 11
+        Me.Label8.Text = "<"
+        Me.Label8.UseCompatibleTextRendering = True
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.White
+        Me.Button14.Enabled = False
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Font = New System.Drawing.Font("Segoe UI Semilight", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Location = New System.Drawing.Point(238, 135)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(285, 60)
+        Me.Button14.TabIndex = 10
+        Me.Button14.Text = "English"
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semilight", 27.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(0, 8)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(205, 51)
+        Me.Label7.TabIndex = 9
+        Me.Label7.Text = "Settings:"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Button13.Enabled = False
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.Font = New System.Drawing.Font("Segoe UI Semilight", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.Location = New System.Drawing.Point(238, 65)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(285, 60)
+        Me.Button13.TabIndex = 8
+        Me.Button13.Text = "Reset Settings"
+        Me.Button13.UseVisualStyleBackColor = False
+        '
         'Panel10
         '
         Me.Panel10.BackgroundImage = Global.livetv_morc.My.Resources.Resources.panel
         Me.Panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel10.Controls.Add(Me.PictureBox18)
-        Me.Panel10.Controls.Add(Me.PictureBox17)
-        Me.Panel10.Controls.Add(Me.PictureBox16)
-        Me.Panel10.Controls.Add(Me.PictureBox15)
-        Me.Panel10.Controls.Add(Me.PictureBox14)
-        Me.Panel10.Controls.Add(Me.PictureBox13)
-        Me.Panel10.Controls.Add(Me.PictureBox12)
-        Me.Panel10.Controls.Add(Me.PictureBox11)
-        Me.Panel10.Controls.Add(Me.PictureBox10)
-        Me.Panel10.Controls.Add(Me.PictureBox9)
-        Me.Panel10.Controls.Add(Me.PictureBox8)
-        Me.Panel10.Controls.Add(Me.PictureBox7)
-        Me.Panel10.Controls.Add(Me.PictureBox6)
-        Me.Panel10.Controls.Add(Me.PictureBox5)
         Me.Panel10.Controls.Add(Me.Label6)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel10.Location = New System.Drawing.Point(0, 493)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(1079, 44)
         Me.Panel10.TabIndex = 6
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox18.BackgroundImage = Global.livetv_morc.My.Resources.Resources.channelicon1
-        Me.PictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox18.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox18.Location = New System.Drawing.Point(960, 0)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox18.TabIndex = 17
-        Me.PictureBox18.TabStop = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox17.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox17.Location = New System.Drawing.Point(905, 0)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox17.TabIndex = 16
-        Me.PictureBox17.TabStop = False
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox16.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox16.Location = New System.Drawing.Point(850, 0)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox16.TabIndex = 15
-        Me.PictureBox16.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox15.BackgroundImage = Global.livetv_morc.My.Resources.Resources.channelicon1
-        Me.PictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox15.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox15.Location = New System.Drawing.Point(795, 0)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox15.TabIndex = 14
-        Me.PictureBox15.TabStop = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox14.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox14.Location = New System.Drawing.Point(740, 0)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox14.TabIndex = 13
-        Me.PictureBox14.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox13.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox13.Location = New System.Drawing.Point(685, 0)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox13.TabIndex = 12
-        Me.PictureBox13.TabStop = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox12.BackgroundImage = Global.livetv_morc.My.Resources.Resources.channelicon1
-        Me.PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox12.Location = New System.Drawing.Point(630, 0)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox12.TabIndex = 11
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox11.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox11.Location = New System.Drawing.Point(575, 0)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox11.TabIndex = 10
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox10.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox10.Location = New System.Drawing.Point(520, 0)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox10.TabIndex = 9
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox9.BackgroundImage = Global.livetv_morc.My.Resources.Resources.channelicon1
-        Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox9.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox9.Location = New System.Drawing.Point(465, 0)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox9.TabIndex = 8
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox8.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox8.Location = New System.Drawing.Point(410, 0)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox8.TabIndex = 7
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox7.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox7.Location = New System.Drawing.Point(355, 0)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox7.TabIndex = 6
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.BackgroundImage = Global.livetv_morc.My.Resources.Resources.channelicon1
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox6.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox6.Location = New System.Drawing.Point(300, 0)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox6.TabIndex = 5
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox5.Location = New System.Drawing.Point(245, 0)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(55, 44)
-        Me.PictureBox5.TabIndex = 0
-        Me.PictureBox5.TabStop = False
         '
         'Label6
         '
@@ -713,18 +598,6 @@ Partial Class Form1
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "by Morc 2017"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(10, 98)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(600, 84)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "this app uses public ip addresses " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "with live tv from slovakia and czech"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -737,15 +610,21 @@ Partial Class Form1
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "ver."
         '
-        'Button13
+        'Timer5
         '
-        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(7, 22)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(233, 68)
-        Me.Button13.TabIndex = 2
-        Me.Button13.Text = "reset settings"
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.Timer5.Interval = 10
+        '
+        'Timer6
+        '
+        Me.Timer6.Interval = 500
+        '
+        'Timer7
+        '
+        Me.Timer7.Interval = 10
+        '
+        'Timer8
+        '
+        Me.Timer8.Interval = 500
         '
         'Form1
         '
@@ -790,20 +669,6 @@ Partial Class Form1
         Me.Panel9.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -844,22 +709,16 @@ Partial Class Form1
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button13 As System.Windows.Forms.Button
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Button13 As Button
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents PictureBox18 As PictureBox
-    Friend WithEvents PictureBox17 As PictureBox
-    Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents PictureBox15 As PictureBox
-    Friend WithEvents PictureBox14 As PictureBox
-    Friend WithEvents PictureBox13 As PictureBox
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Timer5 As Timer
+    Friend WithEvents Timer6 As Timer
+    Friend WithEvents Timer7 As Timer
+    Friend WithEvents Timer8 As Timer
 End Class

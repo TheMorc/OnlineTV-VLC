@@ -53,6 +53,7 @@ Partial Class ovladac
         Me.Button28 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -431,7 +432,7 @@ Partial Class ovladac
         Me.Button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Location = New System.Drawing.Point(134, 391)
+        Me.Button11.Location = New System.Drawing.Point(40, 391)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(43, 30)
         Me.Button11.TabIndex = 28
@@ -444,9 +445,23 @@ Partial Class ovladac
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(55, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(104, 13)
+        Me.Label1.Size = New System.Drawing.Size(117, 13)
         Me.Label1.TabIndex = 29
-        Me.Label1.Text = "▼ Turn ON to watch"
+        Me.Label1.Text = "▼ Click here to turn on."
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.Transparent
+        Me.Button12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Location = New System.Drawing.Point(138, 49)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(43, 30)
+        Me.Button12.TabIndex = 30
+        Me.Button12.UseVisualStyleBackColor = False
         '
         'ovladac
         '
@@ -455,6 +470,7 @@ Partial Class ovladac
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(221, 721)
+        Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button28)
@@ -523,4 +539,5 @@ Partial Class ovladac
     Friend WithEvents Button28 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Button12 As Button
 End Class

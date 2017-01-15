@@ -209,6 +209,18 @@ Namespace My
                 Me("slagr") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("English")>  _
+        Public Property lang() As String
+            Get
+                Return CType(Me("lang"),String)
+            End Get
+            Set
+                Me("lang") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
