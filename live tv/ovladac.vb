@@ -461,4 +461,9 @@
         End If
 
     End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Form1.Close()
+        Close()
+    End Sub
 End Class

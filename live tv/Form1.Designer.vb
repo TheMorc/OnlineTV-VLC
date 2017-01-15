@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim WebPreferences2 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
+        Dim WebPreferences4 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
         Me.AxVLCPlugin21 = New AxAXVLC.AxVLCPlugin2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
@@ -135,7 +135,7 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(57, 42)
+        Me.Panel2.Location = New System.Drawing.Point(93, 42)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(185, 52)
         Me.Panel2.TabIndex = 2
@@ -217,15 +217,15 @@ Partial Class Form1
         '
         'WebSessionProvider1
         '
-        WebPreferences2.Databases = True
-        WebPreferences2.EnableGPUAcceleration = True
-        WebPreferences2.JavascriptViewChangeSource = False
-        WebPreferences2.JavascriptViewEvents = False
-        WebPreferences2.JavascriptViewExecute = False
-        WebPreferences2.SmoothScrolling = True
-        WebPreferences2.UniversalAccessFromFileURL = True
-        WebPreferences2.WebGL = True
-        Me.WebSessionProvider1.Preferences = WebPreferences2
+        WebPreferences4.Databases = True
+        WebPreferences4.EnableGPUAcceleration = True
+        WebPreferences4.JavascriptViewChangeSource = False
+        WebPreferences4.JavascriptViewEvents = False
+        WebPreferences4.JavascriptViewExecute = False
+        WebPreferences4.SmoothScrolling = True
+        WebPreferences4.UniversalAccessFromFileURL = True
+        WebPreferences4.WebGL = True
+        Me.WebSessionProvider1.Preferences = WebPreferences4
         Me.WebSessionProvider1.Views.Add(Me.awebrow)
         '
         'awebrow
@@ -431,7 +431,7 @@ Partial Class Form1
         Me.Panel5.BackgroundImage = Global.livetv_morc.My.Resources.Resources.panel
         Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel5.Controls.Add(Me.Panel6)
-        Me.Panel5.Location = New System.Drawing.Point(669, 42)
+        Me.Panel5.Location = New System.Drawing.Point(632, 43)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(540, 52)
         Me.Panel5.TabIndex = 6
@@ -755,13 +755,13 @@ Partial Class Form1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1264, 825)
         Me.Controls.Add(Me.Panel9)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel8)
-        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.AxVLCPlugin21)
         Me.Controls.Add(Me.PictureBox2)
         Me.DoubleBuffered = True
