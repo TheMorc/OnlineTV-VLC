@@ -61,6 +61,7 @@ Partial Class Form1
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -96,7 +97,7 @@ Partial Class Form1
         Me.AxVLCPlugin21.Location = New System.Drawing.Point(36, 21)
         Me.AxVLCPlugin21.Name = "AxVLCPlugin21"
         Me.AxVLCPlugin21.OcxState = CType(resources.GetObject("AxVLCPlugin21.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1191, 685)
+        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1192, 685)
         Me.AxVLCPlugin21.TabIndex = 0
         '
         'Timer1
@@ -486,6 +487,7 @@ Partial Class Form1
         '
         Me.Panel9.BackgroundImage = Global.livetv_morc.My.Resources.Resources.panel
         Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel9.Controls.Add(Me.Label11)
         Me.Panel9.Controls.Add(Me.Label10)
         Me.Panel9.Controls.Add(Me.Label9)
         Me.Panel9.Controls.Add(Me.Label8)
@@ -499,6 +501,18 @@ Partial Class Form1
         Me.Panel9.Size = New System.Drawing.Size(1079, 537)
         Me.Panel9.TabIndex = 1
         Me.Panel9.Visible = False
+        '
+        'Label11
+        '
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(549, 135)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(512, 60)
+        Me.Label11.TabIndex = 14
+        Me.Label11.Text = "Translator:"
+        Me.Label11.UseCompatibleTextRendering = True
         '
         'Label10
         '
@@ -721,4 +735,5 @@ Partial Class Form1
     Friend WithEvents Timer6 As Timer
     Friend WithEvents Timer7 As Timer
     Friend WithEvents Timer8 As Timer
+    Friend WithEvents Label11 As Label
 End Class

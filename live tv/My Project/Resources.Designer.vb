@@ -81,6 +81,26 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; 
+        '''&lt;languages&gt;
+        '''	&lt;slovak&gt;
+        '''		&lt;&gt;
+        '''	&lt;/slovak&gt;
+        '''	&lt;english&gt;
+        '''		&lt;&gt;
+        '''	&lt;/english&gt;
+        '''	&lt;czech&gt;
+        '''		&lt;&gt;
+        '''	&lt;/czech&gt;
+        '''&lt;/languages&gt;.
+        '''</summary>
+        Friend ReadOnly Property languages() As String
+            Get
+                Return ResourceManager.GetString("languages", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property light1() As System.Drawing.Bitmap

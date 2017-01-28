@@ -1,4 +1,8 @@
-﻿Public Class ovladac
+﻿'This is ovladacka aka the controller form
+'everything that you need about this is in Form1.vb source code
+'thanks
+'Morc 2017
+Public Class ovladac
     Dim drag As Boolean
     Dim volume = 50
     Dim mousex As Integer
@@ -398,7 +402,7 @@
                 Form1.prehraj("10", "CT2", My.Settings.ct2)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button11.BackColor = Color.DeepSkyBlue Then
-                Form1.prehraj("11", "RETRO", my.settings.retro)
+                Form1.prehraj("11", "RETRO", My.Settings.retro)
                 Form1.Panel4.Visible = False
             ElseIf Form1.Button12.BackColor = Color.DeepSkyBlue Then
                 Form1.prehraj("12", "ELEKTRIKA.TV", My.Settings.elektrikatv)
@@ -472,6 +476,7 @@
     Private Sub ovladac_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         turned = False
         tlacitka()
+        con.type("loaded controller form")
     End Sub
 
     Private Sub Button1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Button1.KeyDown
@@ -490,6 +495,20 @@
             Form1.channel = "*"
         End If
 
+        If e.KeyCode = Keys.C AndAlso e.Modifiers = (Keys.Control) Then
+            con.Visible = True
+        End If
+        If e.KeyCode = Keys.T AndAlso e.Modifiers = (Keys.Control) Then
+            Form1.Label1.Text = "dev"
+            Form1.Label2.Text = "topmostoff"
+            Form1.nazovs = "topmostoff"
+            Form1.cislos = "dev"
+            Form1.Panel2.Visible = True
+            Form1.Timer1.Start()
+            Form1.channel = "dev"
+            Form1.TopMost = False
+            Me.TopMost = False
+        End If
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
@@ -503,12 +522,15 @@
                 If Form1.Button14.Text = "English" Then
                     Form1.Button14.Text = "Slovak"
                     My.Settings.lang = "Slovak"
+                    Form1.jazyk()
                 ElseIf Form1.Button14.Text = "Slovak" Then
                     Form1.Button14.Text = "Czech"
                     My.Settings.lang = "Czech"
+                    Form1.jazyk()
                 ElseIf Form1.Button14.Text = "Czech" Then
                     Form1.Button14.Text = "English"
                     My.Settings.lang = "English"
+                    Form1.jazyk()
                 End If
                 Form1.Timer7.Start()
             End If
