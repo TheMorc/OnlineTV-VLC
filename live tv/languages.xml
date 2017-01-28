@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
   <languages>
-    <slovak turnontxt="▼ Kliknite na sledovanie." settxt="Nastavenia:" langtxt="Jazyk:" transtxt="Preklad: " resetbtn="Resetovať nads."></slovak>
-    <english turnontxt="▼ Click here to turn on." settxt="Settings:" langtxt="Language:" transtxt="Translator: " resetbtn="Reset Settings"></english>
-    <czech turnontxt="▼ Klikněte na sledování." settxt="Nadstavení:" langtxt="Jazyk:" transtxt="Překlad: " resetbtn="Resetovat nads."></czech>
+    <slovak turnontxt="▼ Kliknite na sledovanie." settxt="Nastavenia:" langtxt="Jazyk:" transtxt="Preklad: Morc" resetbtn="Resetovať nads." yes="Ano" no="Nie"></slovak>
+    <english turnontxt="▼ Click here to turn on." settxt="Settings:" langtxt="Language:" transtxt="Translator: Morc" resetbtn="Reset Settings" yes="Yes" no="No"></english>
+    <czech turnontxt="▼ Klikněte na sledování." settxt="Nadstavení:" langtxt="Jazyk:" transtxt="Překlad: Morc" resetbtn="Resetovat nads." yes="Ano" no="Ne"></czech>
   </languages>

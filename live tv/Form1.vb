@@ -144,4 +144,26 @@ Public Class Form1
         Timer8.Start()
         Timer7.Stop()
     End Sub
+
+    Private Sub Timer12_Tick(sender As Object, e As EventArgs) Handles Timer12.Tick
+        Label13.Font = New Font("Segoe UI", 27.75, FontStyle.Regular)
+        Timer12.Stop()
+    End Sub
+
+    Private Sub Timer11_Tick(sender As Object, e As EventArgs) Handles Timer11.Tick
+        Label13.Font = New Font("Segoe UI", 27.75, FontStyle.Bold)
+        Timer12.Start()
+        Timer11.Stop()
+    End Sub
+
+    Private Sub Timer10_Tick(sender As Object, e As EventArgs) Handles Timer10.Tick
+        Label8.Font = New Font("Segoe UI", 27.75, FontStyle.Regular)
+        Timer10.Stop()
+    End Sub
+
+    Private Sub Timer9_Tick(sender As Object, e As EventArgs) Handles Timer9.Tick
+        Label14.Font = New Font("Segoe UI", 27.75, FontStyle.Bold)
+        Timer10.Start()
+        Timer9.Stop()
+    End Sub
 End Class

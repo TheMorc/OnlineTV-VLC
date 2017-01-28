@@ -308,10 +308,13 @@ Public Class ovladac
         If Form1.Panel9.Visible = True Then
             If Form1.Button13.BackColor = Color.DeepSkyBlue Then
                 Form1.Button13.BackColor = Color.White
-                Form1.Button14.BackColor = Color.DeepSkyBlue
+                Form1.Button15.BackColor = Color.DeepSkyBlue
             ElseIf Form1.Button14.BackColor = Color.DeepSkyBlue Then
                 Form1.Button14.BackColor = Color.White
                 Form1.Button13.BackColor = Color.DeepSkyBlue
+            ElseIf Form1.Button15.BackColor = Color.DeepSkyBlue Then
+                Form1.Button15.BackColor = Color.White
+                Form1.Button14.BackColor = Color.DeepSkyBlue
             End If
         End If
     End Sub
@@ -364,6 +367,9 @@ Public Class ovladac
                 Form1.Button14.BackColor = Color.DeepSkyBlue
             ElseIf Form1.Button14.BackColor = Color.DeepSkyBlue Then
                 Form1.Button14.BackColor = Color.White
+                Form1.Button15.BackColor = Color.DeepSkyBlue
+            ElseIf Form1.Button15.BackColor = Color.DeepSkyBlue Then
+                Form1.Button15.BackColor = Color.White
                 Form1.Button13.BackColor = Color.DeepSkyBlue
             End If
         End If
@@ -533,6 +539,20 @@ Public Class ovladac
                     Form1.jazyk()
                 End If
                 Form1.Timer7.Start()
+            End If
+            If Form1.Button15.BackColor = Color.DeepSkyBlue Then
+                If My.Settings.topmost = True Then
+                    My.Settings.topmost = False
+                    Form1.TopMost = False
+                    Me.TopMost = False
+                    Form1.Button15.Text = "✗"
+                Else
+                    My.Settings.topmost = True
+                    Form1.TopMost = True
+                    Me.TopMost = True
+                    Form1.Button15.Text = "✓"
+                End If
+                Form1.Timer9.Start()
             End If
         End If
     End Sub

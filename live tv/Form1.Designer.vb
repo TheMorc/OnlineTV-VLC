@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim WebPreferences1 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
+        Dim WebPreferences2 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
         Me.AxVLCPlugin21 = New AxAXVLC.AxVLCPlugin2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
@@ -61,6 +61,10 @@ Partial Class Form1
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -75,6 +79,10 @@ Partial Class Form1
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer9 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer10 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer11 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer12 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.AxVLCPlugin21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,7 +105,7 @@ Partial Class Form1
         Me.AxVLCPlugin21.Location = New System.Drawing.Point(36, 21)
         Me.AxVLCPlugin21.Name = "AxVLCPlugin21"
         Me.AxVLCPlugin21.OcxState = CType(resources.GetObject("AxVLCPlugin21.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1192, 685)
+        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1191, 685)
         Me.AxVLCPlugin21.TabIndex = 0
         '
         'Timer1
@@ -198,15 +206,15 @@ Partial Class Form1
         '
         'WebSessionProvider1
         '
-        WebPreferences1.Databases = True
-        WebPreferences1.EnableGPUAcceleration = True
-        WebPreferences1.JavascriptViewChangeSource = False
-        WebPreferences1.JavascriptViewEvents = False
-        WebPreferences1.JavascriptViewExecute = False
-        WebPreferences1.SmoothScrolling = True
-        WebPreferences1.UniversalAccessFromFileURL = True
-        WebPreferences1.WebGL = True
-        Me.WebSessionProvider1.Preferences = WebPreferences1
+        WebPreferences2.Databases = True
+        WebPreferences2.EnableGPUAcceleration = True
+        WebPreferences2.JavascriptViewChangeSource = False
+        WebPreferences2.JavascriptViewEvents = False
+        WebPreferences2.JavascriptViewExecute = False
+        WebPreferences2.SmoothScrolling = True
+        WebPreferences2.UniversalAccessFromFileURL = True
+        WebPreferences2.WebGL = True
+        Me.WebSessionProvider1.Preferences = WebPreferences2
         Me.WebSessionProvider1.Views.Add(Me.awebrow)
         '
         'awebrow
@@ -487,6 +495,10 @@ Partial Class Form1
         '
         Me.Panel9.BackgroundImage = Global.livetv_morc.My.Resources.Resources.panel
         Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel9.Controls.Add(Me.Label13)
+        Me.Panel9.Controls.Add(Me.Label14)
+        Me.Panel9.Controls.Add(Me.Button15)
+        Me.Panel9.Controls.Add(Me.Label12)
         Me.Panel9.Controls.Add(Me.Label11)
         Me.Panel9.Controls.Add(Me.Label10)
         Me.Panel9.Controls.Add(Me.Label9)
@@ -501,6 +513,55 @@ Partial Class Form1
         Me.Panel9.Size = New System.Drawing.Size(1079, 537)
         Me.Panel9.TabIndex = 1
         Me.Panel9.Visible = False
+        '
+        'Label13
+        '
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(523, 204)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(36, 60)
+        Me.Label13.TabIndex = 18
+        Me.Label13.Text = ">"
+        Me.Label13.UseCompatibleTextRendering = True
+        '
+        'Label14
+        '
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(201, 204)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(36, 60)
+        Me.Label14.TabIndex = 17
+        Me.Label14.Text = "<"
+        Me.Label14.UseCompatibleTextRendering = True
+        '
+        'Button15
+        '
+        Me.Button15.BackColor = System.Drawing.Color.White
+        Me.Button15.Enabled = False
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button15.Font = New System.Drawing.Font("Segoe UI Semilight", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.Location = New System.Drawing.Point(238, 204)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(285, 60)
+        Me.Button15.TabIndex = 16
+        Me.Button15.Text = "✓"
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'Label12
+        '
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semilight", 27.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(1, 213)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(205, 51)
+        Me.Label12.TabIndex = 15
+        Me.Label12.Text = "TopMost:"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label11
         '
@@ -640,6 +701,22 @@ Partial Class Form1
         '
         Me.Timer8.Interval = 500
         '
+        'Timer9
+        '
+        Me.Timer9.Interval = 10
+        '
+        'Timer10
+        '
+        Me.Timer10.Interval = 500
+        '
+        'Timer11
+        '
+        Me.Timer11.Interval = 10
+        '
+        'Timer12
+        '
+        Me.Timer12.Interval = 500
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -736,4 +813,12 @@ Partial Class Form1
     Friend WithEvents Timer7 As Timer
     Friend WithEvents Timer8 As Timer
     Friend WithEvents Label11 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Timer9 As Timer
+    Friend WithEvents Timer10 As Timer
+    Friend WithEvents Timer11 As Timer
+    Friend WithEvents Timer12 As Timer
 End Class
