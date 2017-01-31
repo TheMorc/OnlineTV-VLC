@@ -13,7 +13,7 @@ Public Class Form1
     Public cislos
     Public nazovs
     Dim mys As Integer
-    Public ver = "1.4"
+    Public ver = "1.5"
     Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseDown
         drag = True
         mys = Windows.Forms.Cursor.Position.X - Me.Left
