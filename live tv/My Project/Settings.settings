@@ -6,10 +6,10 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="stv1" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://youtu.be/kf49VfDBk-I</Value>
     </Setting>
     <Setting Name="stv2" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://youtu.be/kf49VfDBk-I</Value>
     </Setting>
     <Setting Name="ta3" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://88.212.15.9:5000/live/ta3_1200/playlist_key_url.m3u8</Value>
@@ -27,10 +27,10 @@
       <Value Profile="(Default)">rtmp://rtmp.elektrika.cz/live/myStream.sdp</Value>
     </Setting>
     <Setting Name="ct1" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://youtu.be/kf49VfDBk-I</Value>
     </Setting>
     <Setting Name="ct2" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://youtu.be/kf49VfDBk-I</Value>
     </Setting>
     <Setting Name="retro" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8</Value>

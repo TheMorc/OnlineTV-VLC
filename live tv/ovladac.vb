@@ -422,8 +422,10 @@ Public Class ovladac
 
         If Form1.Panel9.Visible = True Then
             If Form1.Button13.BackColor = Color.DeepSkyBlue Then
-                My.Settings.firstrun = True
+                My.Settings.Reset()
                 My.Settings.Save()
+                Form1.jazyk("english")
+                Button15.Text = "✗"
             End If
         End If
     End Sub
@@ -518,6 +520,7 @@ Public Class ovladac
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        My.Settings.Save()
         Form1.Close()
         Close()
     End Sub
@@ -528,15 +531,15 @@ Public Class ovladac
                 If Form1.Button14.Text = "English" Then
                     Form1.Button14.Text = "Slovak"
                     My.Settings.lang = "Slovak"
-                    Form1.jazyk()
+                    Form1.jazyk("slovak")
                 ElseIf Form1.Button14.Text = "Slovak" Then
                     Form1.Button14.Text = "Czech"
                     My.Settings.lang = "Czech"
-                    Form1.jazyk()
+                    Form1.jazyk("czech")
                 ElseIf Form1.Button14.Text = "Czech" Then
                     Form1.Button14.Text = "English"
                     My.Settings.lang = "English"
-                    Form1.jazyk()
+                    Form1.jazyk("english")
                 End If
                 Form1.Timer7.Start()
             End If
@@ -563,12 +566,15 @@ Public Class ovladac
                 If Form1.Button14.Text = "English" Then
                     Form1.Button14.Text = "Czech"
                     My.Settings.lang = "Czech"
+                    Form1.jazyk("czech")
                 ElseIf Form1.Button14.Text = "Czech" Then
                     Form1.Button14.Text = "Slovak"
                     My.Settings.lang = "Slovak"
+                    Form1.jazyk("slovak")
                 ElseIf Form1.Button14.Text = "Slovak" Then
                     Form1.Button14.Text = "English"
                     My.Settings.lang = "English"
+                    Form1.jazyk("english")
                 End If
                 Form1.Timer5.Start()
             End If

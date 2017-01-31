@@ -64,7 +64,6 @@ Partial Class Form1
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button15 = New System.Windows.Forms.Button()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -75,6 +74,7 @@ Partial Class Form1
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
@@ -498,7 +498,6 @@ Partial Class Form1
         Me.Panel9.Controls.Add(Me.Label13)
         Me.Panel9.Controls.Add(Me.Label14)
         Me.Panel9.Controls.Add(Me.Button15)
-        Me.Panel9.Controls.Add(Me.Label12)
         Me.Panel9.Controls.Add(Me.Label11)
         Me.Panel9.Controls.Add(Me.Label10)
         Me.Panel9.Controls.Add(Me.Label9)
@@ -508,6 +507,7 @@ Partial Class Form1
         Me.Panel9.Controls.Add(Me.Button13)
         Me.Panel9.Controls.Add(Me.Panel10)
         Me.Panel9.Controls.Add(Me.Label5)
+        Me.Panel9.Controls.Add(Me.Label12)
         Me.Panel9.Location = New System.Drawing.Point(93, 44)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(1079, 537)
@@ -550,18 +550,6 @@ Partial Class Form1
         Me.Button15.TabIndex = 16
         Me.Button15.Text = "✓"
         Me.Button15.UseVisualStyleBackColor = False
-        '
-        'Label12
-        '
-        Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semilight", 27.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(1, 213)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(205, 51)
-        Me.Label12.TabIndex = 15
-        Me.Label12.Text = "TopMost:"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label11
         '
@@ -631,7 +619,7 @@ Partial Class Form1
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(0, 8)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(205, 51)
+        Me.Label7.Size = New System.Drawing.Size(228, 51)
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "Settings:"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -684,6 +672,18 @@ Partial Class Form1
         Me.Label5.Size = New System.Drawing.Size(80, 42)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "ver."
+        '
+        'Label12
+        '
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semilight", 27.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(1, 185)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(205, 100)
+        Me.Label12.TabIndex = 15
+        Me.Label12.Text = "TopMost:"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Timer5
         '

@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-  <languages>
-    <slovak turnontxt="▼ Kliknite na sledovanie." settxt="Nastavenia:" langtxt="Jazyk:" transtxt="Preklad: Morc" resetbtn="Resetovať nads." yes="Ano" no="Nie"></slovak>
-    <english turnontxt="▼ Click here to turn on." settxt="Settings:" langtxt="Language:" transtxt="Translator: Morc" resetbtn="Reset Settings" yes="Yes" no="No"></english>
-    <czech turnontxt="▼ Klikněte na sledování." settxt="Nadstavení:" langtxt="Jazyk:" transtxt="Překlad: Morc" resetbtn="Resetovat nads." yes="Ano" no="Ne"></czech>
+<!-- This xml file contains languages to add another language copy <english> child make new with language name and change attributes, then contact me ;) -->
+<!-- You need to contact me, cuz i need to add tho language to VB code, i will even more simplifie the code.-->
+<!-- Morc 2017.-->
+  <languages> <!--- This is the root of languages -->
+    <slovak 
+      turnontxt="▼ Kliknite na sledovanie." 
+      settxt="Nastavenia:" 
+      langtxt="Jazyk:" 
+      transtxt="Preklad: Morc" 
+      resetbtn="Resetovať nads." 
+      yes="Ano" 
+      no="Nie"
+      topmosttxt="Okno navrchu:">
+    </slovak> <!-- This is child with slovak language -->
+    <english 
+      turnontxt="▼ Click here to turn on." 
+      settxt="Settings:" 
+      langtxt="Language:" 
+      transtxt="Translator: Morc"
+      resetbtn="Reset Settings" 
+      yes="Yes" 
+      no="No"
+      topmosttxt="TopMost:">
+    </english> <!-- This is child with english language -->
+    <czech 
+      turnontxt="▼ Klikněte na sledování."
+      settxt="Nadstavení:"
+      langtxt="Jazyk:"
+      transtxt="Překlad: Morc"
+      resetbtn="Resetovat nads."
+      yes="Ano"
+      no="Ne"
+      topmosttxt="Okno navrchu:">
+    </czech> <!-- This is child with czech language -->
   </languages>

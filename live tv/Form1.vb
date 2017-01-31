@@ -55,50 +55,22 @@ Public Class Form1
             Form2.Show()
         End If
         Label5.Text = "ver " + ver
-        jazyk()
         con.type("loaded tv form")
     End Sub
 
-    Public Sub jazyk()
-        If My.Settings.lang = "Slovak" Then
-            Dim doc As New XmlDocument
-            doc.Load("languages.xml")
-            For Each atribut As XmlElement In doc.DocumentElement.GetElementsByTagName("slovak")
-                ' Google translator translates attribute to slovak as atribút, interesting...
-                Label11.Text = citajxml(atribut, "transtxt")
-                Label10.Text = citajxml(atribut, "langtxt")
-                Label7.Text = citajxml(atribut, "settxt")
-                Button13.Text = citajxml(atribut, "resetbtn")
-                ovladac.Label1.Text = citajxml(atribut, "turnontxt")
-                con.type("changed language to slovak")
-            Next atribut
-        End If
-        If My.Settings.lang = "English" Then
-            Dim doc As New XmlDocument
-            doc.Load("languages.xml")
-            For Each atribut As XmlElement In doc.DocumentElement.GetElementsByTagName("english")
-                ' Google translator translates attribute to slovak as atribút, interesting...
-                Label11.Text = citajxml(atribut, "transtxt")
-                Label10.Text = citajxml(atribut, "langtxt")
-                Label7.Text = citajxml(atribut, "settxt")
-                Button13.Text = citajxml(atribut, "resetbtn")
-                ovladac.Label1.Text = citajxml(atribut, "turnontxt")
-                con.type("changed language to english")
-            Next atribut
-        End If
-        If My.Settings.lang = "Czech" Then
-            Dim doc As New XmlDocument
-            doc.Load("languages.xml")
-            For Each atribut As XmlElement In doc.DocumentElement.GetElementsByTagName("czech")
-                ' Google translator translates attribute to slovak as atribút, interesting...
-                Label11.Text = citajxml(atribut, "transtxt")
-                Label10.Text = citajxml(atribut, "langtxt")
-                Label7.Text = citajxml(atribut, "settxt")
-                Button13.Text = citajxml(atribut, "resetbtn")
-                ovladac.Label1.Text = citajxml(atribut, "turnontxt")
-                con.type("changed language to czech")
-            Next atribut
-        End If
+    Public Sub jazyk(ByVal lang As String)
+        Dim doc As New XmlDocument
+        doc.Load("languages.xml")
+        For Each atribut As XmlElement In doc.DocumentElement.GetElementsByTagName(lang)
+            ' Google translator translates attribute to slovak as atribút, interesting...
+            Label11.Text = citajxml(atribut, "transtxt")
+            Label10.Text = citajxml(atribut, "langtxt")
+            Label7.Text = citajxml(atribut, "settxt")
+            Button13.Text = citajxml(atribut, "resetbtn")
+            ovladac.Label1.Text = citajxml(atribut, "turnontxt")
+            Label12.Text = citajxml(atribut, "topmosttxt")
+            con.type("changed language to " + lang)
+        Next atribut
     End Sub
 
 
