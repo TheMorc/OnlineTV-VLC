@@ -1,4 +1,4 @@
-# "Samsung" Live-TV- ActiveX VLC application
+# "Samsung" Live TV VLC(ActiveX) application
 This is repository for my VisualBasic .net application, now based on ActiveX VLC plugin - expect changes
 
 This application was made in 2 days from 1/2.Jan and idea come from 3 years before as i was trying to make online tv application but and it wasn't working. 
