@@ -68,7 +68,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://youtu.be/kf49VfDBk-I")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("95.47.178.141:8086/udp/239.255.0.3:5000")>  _
         Public Property stv1() As String
             Get
                 Return CType(Me("stv1"),String)
@@ -80,7 +80,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://youtu.be/kf49VfDBk-I")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("95.47.178.141:8086/udp/239.255.0.4:5000")>  _
         Public Property stv2() As String
             Get
                 Return CType(Me("stv2"),String)

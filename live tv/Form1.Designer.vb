@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim WebPreferences2 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
+        Dim WebPreferences1 As Awesomium.Core.WebPreferences = New Awesomium.Core.WebPreferences(True)
         Me.AxVLCPlugin21 = New AxAXVLC.AxVLCPlugin2()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
@@ -105,7 +105,7 @@ Partial Class Form1
         Me.AxVLCPlugin21.Location = New System.Drawing.Point(36, 21)
         Me.AxVLCPlugin21.Name = "AxVLCPlugin21"
         Me.AxVLCPlugin21.OcxState = CType(resources.GetObject("AxVLCPlugin21.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1191, 685)
+        Me.AxVLCPlugin21.Size = New System.Drawing.Size(1192, 685)
         Me.AxVLCPlugin21.TabIndex = 0
         '
         'Timer1
@@ -206,15 +206,15 @@ Partial Class Form1
         '
         'WebSessionProvider1
         '
-        WebPreferences2.Databases = True
-        WebPreferences2.EnableGPUAcceleration = True
-        WebPreferences2.JavascriptViewChangeSource = False
-        WebPreferences2.JavascriptViewEvents = False
-        WebPreferences2.JavascriptViewExecute = False
-        WebPreferences2.SmoothScrolling = True
-        WebPreferences2.UniversalAccessFromFileURL = True
-        WebPreferences2.WebGL = True
-        Me.WebSessionProvider1.Preferences = WebPreferences2
+        WebPreferences1.Databases = True
+        WebPreferences1.EnableGPUAcceleration = True
+        WebPreferences1.JavascriptViewChangeSource = False
+        WebPreferences1.JavascriptViewEvents = False
+        WebPreferences1.JavascriptViewExecute = False
+        WebPreferences1.SmoothScrolling = True
+        WebPreferences1.UniversalAccessFromFileURL = True
+        WebPreferences1.WebGL = True
+        Me.WebSessionProvider1.Preferences = WebPreferences1
         Me.WebSessionProvider1.Views.Add(Me.awebrow)
         '
         'awebrow
